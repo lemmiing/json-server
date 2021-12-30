@@ -1,8 +1,8 @@
 # json-server
-[get post put delete란?](#get-post-put-delete란?)
-[Node.js란?](#node-js란?)
-[ES6이란?](#ES6이란?)
-[json-server의 이해 (mock server)](#json-server의-이해-(mock server))
+1.[get post put delete란?](#get-post-put-delete란?)
+2.[Node.js란?](#node-js란?)
+3.[ES6이란?](#ES6이란?)
+4.[json-server의 이해](#json-server의-이해)
 
 
 ## get post put delete란?
@@ -88,4 +88,4 @@ Non-Blocking 방식은 자신이 호출되었을때 제어권을 바로 자신�
 ## ES6이란?
 
 
-## json-server의 이해 (mock server)
+## json-server의 이해

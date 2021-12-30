@@ -1,5 +1,10 @@
 # json-server
-##### 정리 
+get post put delete란?(#get-post-put-delete란?)
+Node.js란?(#node-js란?)
+ES6이란?(#ES6이란?)
+json-server의 이해 (mock server)(#json-server의-이해-(mock server))
+
+
 ## get post put delete란?
 
 REST API :  웹에서 데이터를 전송 및 처리하는 방법을 정의한 인터페이스
@@ -70,7 +75,7 @@ Non-Blocking 방식은 자신이 호출되었을때 제어권을 바로 자신�
 - 이벤트 기반 프로그래밍으로 전환하는 데에 시간이 걸린다.
 - 서버 로직이 복잡할수록 비동기방식이기 때문에 CallBack Hell에 빠질 수 있다.
 
-### **Node.js 가 어울리는 웹서비스**
+**Node.js 가 어울리는 웹서비스**
 
 - 간단한 로직
 - 대용량(동시에 여러 request를 처리)
@@ -80,7 +85,7 @@ Non-Blocking 방식은 자신이 호출되었을때 제어권을 바로 자신�
 
 **Node.js를 사용하는 대표적인 회사들은 Netplix,Linkedin, Paypal, Uber, Meta(Facebook)이 있다.**
 
-## es6이란?
+## ES6이란?
 
 
 ## json-server의 이해 (mock server)

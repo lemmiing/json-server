@@ -308,4 +308,121 @@ console.log(Python); // Python
 
 문장이 조금 더 간결해졌다!
 
+- **Import and export(가져오기 및 내보내기)**
+
+`export`를 사용하면 다른 JavaScript 구성 요소에 사용할 모듈을 내보낼 수 있습니다. 우리는 그 모듈을 우리의 컴포넌트에 사용하기 위해 가져오기 `import`를 사용합니다.
+
+```jsx
+//data.js
+export default function data(name, age) {
+	return `안녕하세요 ${name}, 나이는 ${age}살!`;
+}
+```
+
+그리고 `profile.js`에서 이 기능을 사용하려면 `import`만 사용합니다.
+
+```jsx
+//profile.js
+import data from './data';
+
+console.log(data('lemming', 20));
+// 출력 => 안녕하세요 lemming, 나이는 20살!
+```
+
+두 개 이상의 모듈을 가져오려면, 중괄호에 넣으면 된다.
+
+```jsx
+import { data, userProfile, getPosts } from './data';
+
+console.log(data('lemmig', 20));
+console.log(userProfile);
+console.log(getPosts);
+```
+
+- **Promises(프로미스)**
+
+싱글 스레드인 자바스크립트에서 비동기 처리를 위해서 콜백(callback)을 사용해왔는데,
+
+콜백이 사용되는 경우가 많아지면서 단점이 생겼다.
+
+단점은 비동기 처리를 순차적으로 실행할 필요가 있는 경우에 비동기 처리를 중첩시켜서 표현하므로 **에러, 예외처리가 어렵다**는 것과 **중첩으로 인한 복잡도가 증가**하는 것이다.
+
+이 두 가지의 단점을 고친 것이 프로미스이다.
+
+```jsx
+const promise1 = function(param){
+return new Promise(function(resolve,reject){
+if(param){
+resolve("rem");
+}
+else{
+reject("lemming");
+}
+});
+}
+//프로미스 실행
+promise1(true).then(function(result){
+console.log(result);//rem
+},function(err){
+console.log(err);//lemming
+});
+
+```
+
+비동기함수를 만들어서 사용해야할 때 프로미스 객체를 리턴하게 만들어서 사용하면 callbaeck hell(콜백 중첩)을 방지할 수 있고 에러처리를 수월하게 할 수 있다.
+
+- **Classes(클래스)**
+
+class를 만들려면 `class`  뒤에 두 개의 중괄호가 있는 class 이름을 사용한다.
+
+```jsx
+class Person {
+	constructor() {
+
+	}
+}
+```
+
+ `new` 객체를 사용하여 `class` 메서드와 속성에 액세스할 수 있다.
+
+```jsx
+class Person {
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
+	}
+}
+
+const user = new Person('lemming', 20);
+
+console.log(user.name); // lemming
+console.log(user.age); // 20
+```
+
+다른 class에서 상속하려면 `extends` 키워드 다음에 상속할 class의 이름을 사용합니다.
+
+```jsx
+class Person {
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	introduce() {
+		console.log(`안녕하세요 ${this.name}입니다. 나이는 ${this.age}살입니다.`);
+	}
+}
+
+// Person 메서드 및 속성 상속
+class UserProfile extends Person {
+	userName() {
+		console.log(this.name);
+	}
+}
+
+const profile = new UserProfile('lemming', 20);
+
+profile.introduce(); // 안녕하세요 lemming입니다. 나이는 20살입니다.
+profile.userName(); // lemming
+```
 ## json-server의 이해

@@ -111,7 +111,6 @@ Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의
 - Array and object destructing(배열 및 객체 비구조화)
 - Import and export(가져오기 및 내보내기)
 - Promises(프로미스)
-- Rest parameter and Spread operator(나머지 매개 변수 및 확산 연산자)
 - Classes(클래스)
 
 - **const and let**

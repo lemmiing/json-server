@@ -102,7 +102,7 @@ ECMAScript 사양을 준수하는 범용 스크립팅 언어
 
 Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의된 범용 스크립트 언어
 
-**ES6 중에 꼭 알아야 하는 10가지**
+**ES6 문법**
 
 - const and let
 - Arrow functions(화살표 함수)

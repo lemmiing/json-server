@@ -124,7 +124,7 @@ Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의
 
 ```jsx
 // ES5
-		var name = 'lemming'
+    var name = 'lemming'
     console.log(name) // lemming
 
     var name = 'javascript'
@@ -141,7 +141,7 @@ Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의
 
 ```jsx
 // ES6
-		let name = 'lemming'
+    let name = 'lemming'
     console.log(name) // lemming
 
     let name = 'javascript'

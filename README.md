@@ -150,8 +150,8 @@ Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의
 ```
 
 변수 재선언이 되지 않는다.
-
-`let` 은 변수에 재할당이 가능
+추가로 `let`과 `const`의 차이는 
+`let` 은 변수에 재할당이 가능
 
 ```jsx
     let name = 'lemming'
@@ -188,7 +188,7 @@ ES6에서는 익명 함수를 더 간단하게 생성할 수 있는 방법으로
 
 ```jsx
 let name = () => {
-		console.log("lemming");
+    console.log("lemming");
 };
 
 name();
@@ -202,7 +202,7 @@ function 키워드 대신 화살표(=>)를 사용하여 보다 간략한 방법�
 
 - **Template Literals(템플릿 리터럴)**
 
-문자열을 연결하기 위해 더하기(+) 연산자를 사용할 필요가 없고, 백틱(```)을 사용하여 문자열 내에서 변수를 사용할 수도 있다.
+문자열을 연결하기 위해 더하기(+) 연산자를 사용할 필요가 없고, 백틱(`)을 사용하여 문자열 내에서 변수를 사용할 수도 있다.
 
 ```jsx
 // ES5
@@ -227,5 +227,86 @@ console.log(lemming('레밍', 21));
 ```
 
 번거로움도 줄어들고 읽기도 편해졌다.
+
+- **Default parameters(기본 매개 변수)**
+
+매개 변수를 쓰지 않은 경우 매개 변수가 이미 기본값에 정의되어 있어 정의되지 않은 오류가 반환되지 않는다.
+
+```jsx
+function me(a){ 
+return a;
+}
+console.log(js()); // undefined
+```
+
+매개변수를 넣지 않고 함수를 그냥 실행해 버리면 undefined를 그대로 반환하는것이다.
+
+그래서 이를 방지하기 위해 매개변수에 기본값을 사용하면 된다.
+
+```jsx
+function me(a = 'lemming'){
+return a; 
+} console.log(me()); // lemming
+```
+
+동일하게 호출을 하였지만 기본 매개변수의 기본값을 넣었기 때문에 기본값이 출력되는 것을 볼 수 있다.
+
+함수 매개변수 기본값을 사용할 때에 **하나 주의할 점은 매개변수가 undefined 일 때만 작동**한다.
+
+- **Array and object destructing(배열 및 객체 비구조화)**
+
+**배열**
+
+```jsx
+const subjectList = ["Javascirpt", "Java", "Python"];
+const Javascirpt = subjectList[0];
+const Java = subjectList[1];
+const Python = subjectList[2];
+console.log(Javascirpt); // Javascirpt
+console.log(Java); // Java
+console.log(Python); // Python
+```
+
+배열의 값을 각각 변수에 할당 하려면 위처럼 각각 하나씩 지정해 줘야 하는데 이 과정은 번거롭기도 하고 코드가 복잡해 보인다.
+
+```jsx
+const [Javascirpt, Java, Python] = ["Javascirpt", "Java", "Python"];
+console.log(Javascirpt); // Javascirpt
+console.log(Java); // Java
+console.log(Python); // Python
+```
+
+비구조화 할당을 이용하면 간단하게 작성할 수 있다.
+
+**객체**
+
+```jsx
+const subject = {
+  Javascirpt: "Javascirpt",
+  Java: "Java",
+  Python: "Python"
+};
+const Javascirpt = animals.cat;
+const Java = subject.dog;
+const Python = subject.Python;
+console.log(Javascirpt); // Javascirpt
+console.log(Java); // Java
+console.log(Python); // Python
+```
+
+객체도 배열과 마찬가지로 일일히 값을 따로 넣어주려면 번거롭다.
+
+```jsx
+const {Javascirpt, Java, Python} = {
+  Javascirpt: "Javascirpt",
+  Java: "Java",
+  Python: "Python"
+};
+console.log(Javascirpt); // Javascirpt
+console.log(Java); // Java
+console.log(Python); // Python
+```
+
+문장이 조금 더 간결해졌다!
 
 ## json-server의 이해

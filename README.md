@@ -286,8 +286,8 @@ const subject = {
   Java: "Java",
   Python: "Python"
 };
-const Javascirpt = animals.cat;
-const Java = subject.dog;
+const Javascirpt = animals.Javascript;
+const Java = subject.Java;
 const Python = subject.Python;
 console.log(Javascirpt); // Javascirpt
 console.log(Java); // Java

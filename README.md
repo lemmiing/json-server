@@ -1,8 +1,8 @@
 # json-server
-* [get post put delete란?](#get-post-put-delete란?)
-* [Node.js란?](#node-js란?)
-* [ES6이란?](#ES6이란?)
-* [json-server의 이해](#json-server의-이해)
+* [get post put delete란?](#get-post-put-delete%EB%9E%80)
+* [Node.js란?](#node-js%EB%9E%80)
+* [ES6이란?](#es6%EC%9D%B4%EB%9E%80)
+* [json-server의 이해](#json-server%EC%9D%98-%EC%9D%B4%ED%95%B4)
 
 
 ## get post put delete란?

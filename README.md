@@ -86,6 +86,146 @@ Non-Blocking 방식은 자신이 호출되었을때 제어권을 바로 자신�
 **Node.js를 사용하는 대표적인 회사들은 Netplix,Linkedin, Paypal, Uber, Meta(Facebook)이 있다.**
 
 ## ES6이란?
+ECMAScript 6는 ECMAScript의 최신 버전이며, ECMA-262 규격을 따른다.
 
+ES6은 ECMA-262의 6판이라고 보면 된다.
+
+ECMAScript은 *자바스크립트 언어의 표준 언어*이다.
+
+**JavaScript와 ECMAScriptd의 차이**
+
+**JavaScript**
+
+ECMAScript 사양을 준수하는 범용 스크립팅 언어
+
+**ECMAScrip**
+
+Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의된 범용 스크립트 언어
+
+**ES6 중에 꼭 알아야 하는 10가지**
+
+- const and let
+- Arrow functions(화살표 함수)
+- Template Literals(템플릿 리터럴)
+- Default parameters(기본 매개 변수)
+- Array and object destructing(배열 및 객체 비구조화)
+- Import and export(가져오기 및 내보내기)
+- Promises(프로미스)
+- Rest parameter and Spread operator(나머지 매개 변수 및 확산 연산자)
+- Classes(클래스)
+
+- **const and let**
+
+`const`는 변수 선언을 위한 ES6의 새로운 키워드이다.
+
+ `const`는 `var`보다 강력하고 일단 사용되면 변수를 다시 할당할 수 없다. 
+
+즉, 객체와 함께 사용할 때를 제외하고는 **변경 불가능한 변수**
+
+```jsx
+// ES5
+		var name = 'lemming'
+    console.log(name) // lemming
+
+    var name = 'javascript'
+    console.log(name) // javascript
+```
+
+변수를 한 번 더 선언했음에도 불구하고, 에러가 나오지 않고 다른 값이 출력된다.
+
+코드가 많아진다고 치면 어디에서 어떻게 사용 될지도 파악하기 힘들뿐더러 값이 바뀔 우려가 있다.
+
+그래서 ES6 이후, 이를 보완하기 위해 추가 된 변수 선언 방식이 `let` 과 `const` 이다.
+
+위 코드에서 변수 선언 방식만 다르게 하면
+
+```jsx
+// ES6
+		let name = 'lemming'
+    console.log(name) // lemming
+
+    let name = 'javascript'
+    console.log(name)
+    // Uncaught SyntaxError: Identifier 'name' has already been declared
+```
+
+변수 재선언이 되지 않는다.
+
+`let` 은 변수에 재할당이 가능
+
+```jsx
+    let name = 'lemming'
+    console.log(name) // lemming
+
+    let name = 'javascript'
+    console.log(name)
+    // Uncaught SyntaxError: Identifier 'name' has already been declared
+
+    name = 'nodejs'
+    console.log(name) //nodejs
+```
+
+`const`는 변수 재선언과 변수 재할당 모두 불가능하다
+
+```jsx
+    const name = 'lemming'
+    console.log(name) // lemming
+
+    const name = 'javascript'
+    console.log(name)
+    // Uncaught SyntaxError: Identifier 'name' has already been declared
+
+    name = 'nodejs'
+    console.log(name)
+    //Uncaught TypeError: Assignment to constant variable.
+```
+
+하지만 인터넷 익스플로러에서는 `let` 과 `const`는 지원하지 않으므로  `var`을 사용해야 한다.
+
+- **화살표 함수**
+
+ES6에서는 익명 함수를 더 간단하게 생성할 수 있는 방법으로 화살표 함수를 제공한다.
+
+```jsx
+let name = () => {
+		console.log("lemming");
+};
+
+name();
+console.log(name);
+//출력 = > lemming
+```
+
+대부분의 익명 함수 코드는 화살표 함수로 대체할 수 있고,
+
+function 키워드 대신 화살표(=>)를 사용하여 보다 간략한 방법으로 함수를 선언할 수 있다.
+
+- **Template Literals(템플릿 리터럴)**
+
+문자열을 연결하기 위해 더하기(+) 연산자를 사용할 필요가 없고, 백틱(```)을 사용하여 문자열 내에서 변수를 사용할 수도 있다.
+
+```jsx
+// ES5
+function lemming() {
+	return '안녕하세요' + name + '이번년도의 너의 나이는' + age + '살 이다!';
+}
+
+console.log(myFunc1('레밍', 20));
+// 출력 => 안녕하세요 레밍 이번년도의 너의 나이는 20살 이다!
+```
+
+변수나 코드를 표현할 때는 ${}의 중괄호로 감싸준다.
+
+```jsx
+// ES6
+const lemming= (name, age) => {
+	return `안녕하세요 ${name}, 내년의 너의 나이는 ${age}살 이다!`;
+};
+
+console.log(lemming('레밍', 21));
+// 출력 => 안녕하세요 레밍, 내년의 너의 나이는 21살 이다!
+```
+
+번거로움도 줄어들고 읽기도 편해졌다.
 
 ## json-server의 이해

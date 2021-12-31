@@ -104,14 +104,14 @@ Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의
 
 **ES6 문법**
 
-* const and let
-- Arrow functions(화살표 함수)
-- Template Literals(템플릿 리터럴)
-- Default parameters(기본 매개 변수)
-- Array and object destructing(배열 및 객체 비구조화)
-- Import and export(가져오기 및 내보내기)
-- Promises(프로미스)
-- Classes(클래스)
+- [const and let](#const-and-let)
+- [Arrow functions(화살표 함수)](#arrow-functions%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98)
+- [Template Literals(템플릿 리터럴)](#template-literals%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A6%AC%ED%84%B0%EB%9F%B4)
+- [Default parameters(기본 매개 변수)](#default-parameters%EA%B8%B0%EB%B3%B8-%EB%A7%A4%EA%B0%9C-%EB%B3%80%EC%88%98)
+- [Array and object destructing(배열 및 객체 비구조화)]
+- [Import and export(가져오기 및 내보내기)](#import-and-export%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-%EB%B0%8F-%EB%82%B4%EB%B3%B4%EB%82%B4%EA%B8%B0)
+- [Promises(프로미스)](#promises%ED%94%84%EB%A1%9C%EB%AF%B8%EC%8A%A4)
+- [Classes(클래스)](#classes%ED%81%B4%EB%9E%98%EC%8A%A4)
 
 - ### const and let
 
@@ -252,7 +252,7 @@ return a;
 
 함수 매개변수 기본값을 사용할 때에 **하나 주의할 점은 매개변수가 undefined 일 때만 작동**한다.
 
-- **Array and object destructing(배열 및 객체 비구조화)**
+- ### Array and object destructing(배열 및 객체 비구조화)
 
 **배열**
 

@@ -55,9 +55,9 @@ Node.js의 주요 특징은
 Non-Blocking I/O 를 지원하면, 비동기식 프로그래밍이 가능하다.
 
 Non-Blocking 방식은 자신이 호출되었을때 제어권을 바로 자신을 호출한 쪽으로 넘기며, 자신을 호출한 쪽에서 다른 일을 할 수 있도록 하는 것이다. 쉽게 말하면 이전 작업이 완료 될 때까지 멈추지 않고 다음 작업을 수행하는 것이다.
-
-**Node.js의 장점과 단점**
 - - -
+**Node.js의 장점과 단점**
+
 장점
 
 - 싱글 스레드 기반 비동기 I/O처리로 매우 빠르다.
@@ -91,7 +91,7 @@ ECMAScript 6는 ECMAScript의 최신 버전이며, ECMA-262 규격을 따른다.
 ES6은 ECMA-262의 6판이라고 보면 된다.
 
 ECMAScript은 *자바스크립트 언어의 표준 언어*이다.
-
+- - -
 **JavaScript와 ECMAScriptd의 차이**
 
 **JavaScript**
@@ -101,7 +101,7 @@ ECMAScript 사양을 준수하는 범용 스크립팅 언어
 **ECMAScrip**
 
 Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의된 범용 스크립트 언어
-
+- - -
 **ES6 문법**
 
 - [const and let](#const-and-let)
@@ -112,7 +112,7 @@ Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의
 - [Import and export(가져오기 및 내보내기)](#import-and-export%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-%EB%B0%8F-%EB%82%B4%EB%B3%B4%EB%82%B4%EA%B8%B0)
 - [Promises(프로미스)](#promises%ED%94%84%EB%A1%9C%EB%AF%B8%EC%8A%A4)
 - [Classes(클래스)](#classes%ED%81%B4%EB%9E%98%EC%8A%A4)
-
+- - -
 - ### const and let
 
 `const`는 변수 선언을 위한 ES6의 새로운 키워드이다.

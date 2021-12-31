@@ -57,7 +57,7 @@ Non-Blocking I/O 를 지원하면, 비동기식 프로그래밍이 가능하다.
 Non-Blocking 방식은 자신이 호출되었을때 제어권을 바로 자신을 호출한 쪽으로 넘기며, 자신을 호출한 쪽에서 다른 일을 할 수 있도록 하는 것이다. 쉽게 말하면 이전 작업이 완료 될 때까지 멈추지 않고 다음 작업을 수행하는 것이다.
 
 **Node.js의 장점과 단점**
-
+- - -
 장점
 
 - 싱글 스레드 기반 비동기 I/O처리로 매우 빠르다.
@@ -74,7 +74,7 @@ Non-Blocking 방식은 자신이 호출되었을때 제어권을 바로 자신�
 - 노드 전용 모듈을 사용해야 하는데, 고급 기능이 적어 세밀한 가용성 구현이 어렵다.
 - 이벤트 기반 프로그래밍으로 전환하는 데에 시간이 걸린다.
 - 서버 로직이 복잡할수록 비동기방식이기 때문에 CallBack Hell에 빠질 수 있다.
-
+- - -
 **Node.js 가 어울리는 웹서비스**
 
 - 간단한 로직
@@ -108,7 +108,7 @@ Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의
 - [Arrow functions(화살표 함수)](#arrow-functions%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98)
 - [Template Literals(템플릿 리터럴)](#template-literals%ED%85%9C%ED%94%8C%EB%A6%BF-%EB%A6%AC%ED%84%B0%EB%9F%B4)
 - [Default parameters(기본 매개 변수)](#default-parameters%EA%B8%B0%EB%B3%B8-%EB%A7%A4%EA%B0%9C-%EB%B3%80%EC%88%98)
-- [Array and object destructing(배열 및 객체 비구조화)]
+- [Array and object destructing(배열 및 객체 비구조화)](#array-and-object-destructing%EB%B0%B0%EC%97%B4-%EB%B0%8F-%EA%B0%9D%EC%B2%B4-%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94)
 - [Import and export(가져오기 및 내보내기)](#import-and-export%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-%EB%B0%8F-%EB%82%B4%EB%B3%B4%EB%82%B4%EA%B8%B0)
 - [Promises(프로미스)](#promises%ED%94%84%EB%A1%9C%EB%AF%B8%EC%8A%A4)
 - [Classes(클래스)](#classes%ED%81%B4%EB%9E%98%EC%8A%A4)

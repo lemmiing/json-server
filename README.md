@@ -104,7 +104,7 @@ Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의
 
 **ES6 문법**
 
-- const and let
+* const and let
 - Arrow functions(화살표 함수)
 - Template Literals(템플릿 리터럴)
 - Default parameters(기본 매개 변수)
@@ -113,7 +113,7 @@ Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의
 - Promises(프로미스)
 - Classes(클래스)
 
-- **const and let**
+- ### const and let
 
 `const`는 변수 선언을 위한 ES6의 새로운 키워드이다.
 
@@ -181,7 +181,7 @@ Ecma 인터내셔널에 의해 제정된 ECMA-262 기술 규격에 의해 정의
 
 하지만 인터넷 익스플로러에서는 `let` 과 `const`는 지원하지 않으므로  `var`을 사용해야 한다.
 
-- **화살표 함수**
+- ### Arrow functions(화살표 함수)
 
 ES6에서는 익명 함수를 더 간단하게 생성할 수 있는 방법으로 화살표 함수를 제공한다.
 
@@ -199,7 +199,7 @@ console.log(name);
 
 function 키워드 대신 화살표(=>)를 사용하여 보다 간략한 방법으로 함수를 선언할 수 있다.
 
-- **Template Literals(템플릿 리터럴)**
+- ### Template Literals(템플릿 리터럴)
 
 문자열을 연결하기 위해 더하기(+) 연산자를 사용할 필요가 없고, 백틱(`)을 사용하여 문자열 내에서 변수를 사용할 수도 있다.
 
@@ -227,7 +227,7 @@ console.log(lemming('레밍', 21));
 
 번거로움도 줄어들고 읽기도 편해졌다.
 
-- **Default parameters(기본 매개 변수)**
+- ### Default parameters(기본 매개 변수)
 
 매개 변수를 쓰지 않은 경우 매개 변수가 이미 기본값에 정의되어 있어 정의되지 않은 오류가 반환되지 않는다.
 
@@ -308,7 +308,7 @@ console.log(Python); // Python
 
 문장이 조금 더 간결해졌다!
 
-- **Import and export(가져오기 및 내보내기)**
+- ### Import and export(가져오기 및 내보내기)
 
 `export`를 사용하면 다른 JavaScript 구성 요소에 사용할 모듈을 내보낼 수 있습니다. 우리는 그 모듈을 우리의 컴포넌트에 사용하기 위해 가져오기 `import`를 사용합니다.
 
@@ -339,7 +339,7 @@ console.log(userProfile);
 console.log(getPosts);
 ```
 
-- **Promises(프로미스)**
+- ### Promises(프로미스)
 
 싱글 스레드인 자바스크립트에서 비동기 처리를 위해서 콜백(callback)을 사용해왔는데,
 
@@ -371,7 +371,7 @@ console.log(err);//lemming
 
 비동기함수를 만들어서 사용해야할 때 프로미스 객체를 리턴하게 만들어서 사용하면 callbaeck hell(콜백 중첩)을 방지할 수 있고 에러처리를 수월하게 할 수 있다.
 
-- **Classes(클래스)**
+- ### Classes(클래스)
 
 class를 만들려면 `class`  뒤에 두 개의 중괄호가 있는 class 이름을 사용한다.
 

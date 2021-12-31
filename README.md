@@ -90,7 +90,7 @@ ECMAScript 6는 ECMAScript의 최신 버전이며, ECMA-262 규격을 따른다.
 
 ES6은 ECMA-262의 6판이라고 보면 된다.
 
-ECMAScript은 *자바스크립트 언어의 표준 언어*이다.
+ECMAScript은 *자바스크립트 언어의 표준 언어*
 - - -
 **JavaScript와 ECMAScriptd의 차이**
 
@@ -209,7 +209,7 @@ function lemming() {
 	return '안녕하세요' + name + '이번년도의 너의 나이는' + age + '살 이다!';
 }
 
-console.log(myFunc1('레밍', 20));
+console.log(lemming('레밍', 20));
 // 출력 => 안녕하세요 레밍 이번년도의 너의 나이는 20살 이다!
 ```
 

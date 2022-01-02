@@ -312,7 +312,7 @@ console.log(Python); // Python
 
 - ### Import and export(가져오기 및 내보내기)
 
-`export`를 사용하면 다른 JavaScript 구성 요소에 사용할 모듈을 내보낼 수 있습니다. 우리는 그 모듈을 우리의 컴포넌트에 사용하기 위해 가져오기 `import`를 사용합니다.
+`export`를 사용하면 다른 JavaScript 구성 요소에 사용할 모듈을 내보낼 수 있습니다. 우리는 그 모듈을 우리의 컴포넌트에 사용하기 위해 가져오기 `import`를 사용한다.
 
 ```jsx
 //data.js
@@ -321,7 +321,7 @@ export default function data(name, age) {
 }
 ```
 
-그리고 `profile.js`에서 이 기능을 사용하려면 `import`만 사용합니다.
+그리고 `profile.js`에서 이 기능을 사용하려면 `import`만 사용다.
 
 ```jsx
 //profile.js
@@ -401,7 +401,7 @@ console.log(user.name); // lemming
 console.log(user.age); // 20
 ```
 
-다른 class에서 상속하려면 `extends` 키워드 다음에 상속할 class의 이름을 사용합니다.
+다른 class에서 상속하려면 `extends` 키워드 다음에 상속할 class의 이름을 사용다.
 
 ```jsx
 class Person {

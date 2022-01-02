@@ -401,7 +401,7 @@ console.log(user.name); // lemming
 console.log(user.age); // 20
 ```
 
-다른 class에서 상속하려면 `extends` 키워드 다음에 상속할 class의 이름을 사용다.
+다른 class에서 상속하려면 `extends` 키워드 다음에 상속할 class의 이름을 사용한다.
 
 ```jsx
 class Person {

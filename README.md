@@ -430,12 +430,19 @@ profile.userName(); // lemming
 ## json-server의 이해
 TO DO List를 만들어 json server의 이해
 
-Install JSON Server
+JSON Server를 다운 받는 법은 명령 프롬프트에서 관리자 권한으로 실행한다.
 
+```
 npm install -g json-server
+```
+을 입력하면 db.json이 생성된다.
+db.json을 보려면 
+```
+json-server --watch db.json
+```
+을 입력한다.
 
-Create a db.json file with some data
-
+```
 {
   "posts": [
     { "id": 1, "title": "json-server", "author": "typicode" }
@@ -445,7 +452,4 @@ Create a db.json file with some data
   ],
   "profile": { "name": "typicode" }
 }
-
-Start JSON Server
-
-json-server --watch db.json
+```

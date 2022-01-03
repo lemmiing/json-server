@@ -428,3 +428,24 @@ profile.introduce(); // 안녕하세요 lemming입니다. 나이는 20살입니�
 profile.userName(); // lemming
 ```
 ## json-server의 이해
+TO DO List를 만들어 json server의 이해
+
+Install JSON Server
+
+npm install -g json-server
+
+Create a db.json file with some data
+
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+
+Start JSON Server
+
+json-server --watch db.json

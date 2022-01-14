@@ -453,3 +453,4 @@ json-server --watch db.json
   "profile": { "name": "typicode" }
 }
 ```
+여기서 GET, POST, PUT, DELETE을 추가하는 
